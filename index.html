@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProTalk AI Bot Creator</title>
+    <link rel="icon" type="image/png" href="https://i.1.creatium.io/disk2/e8/fd/ed/d01a2eb6e6b002c270070c3c74cfe51440/ptalk_ng.png" />
+    <link rel="shortcut icon" href="https://i.1.creatium.io/disk2/e8/fd/ed/d01a2eb6e6b002c270070c3c74cfe51440/ptalk_ng.png" />
+    
+    <!-- Tailwind CSS v3 (Stable) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            animation: {
+              'fade-in': 'fade-in 0.2s ease-out forwards',
+              'fade-in-scale': 'fade-in-scale 0.2s ease-out forwards',
+              'fade-in-up': 'fade-in-up 0.3s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'fade-in-scale': {
+                '0%': { opacity: '0', transform: 'scale(0.98)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="h-full bg-gray-100 dark:bg-[#23262b] transition-colors duration-200">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="index.tsx"></script>
+  </body>
+</html>
